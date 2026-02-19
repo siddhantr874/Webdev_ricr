@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Order Form</title>
+</head>
+<body>
+
+<h2>Pizza Order Form</h2>
+
+<form>
+
+    First Name:
+    <input type="text" name="fname"><br><br>
+
+    Last Name:
+    <input type="text" name="lname"><br><br>
+
+    Email Address:
+    <input type="email" name="email"><br><br>
+
+    Contact Number:
+    <input type="text" name="contact"><br><br>
+
+    Preferred Delivery Date:
+    <input type="text" placeholder="mm/dd/yyyy"><br><br>
+
+    Size:<br>
+    <input type="radio" name="size"> Small
+    <input type="radio" name="size"> Medium
+    <input type="radio" name="size"> Large
+    <br><br>
+
+    Flavor:<br>
+    <input type="checkbox"> Hawaiian (Php 150.00)
+    <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+    <br>
+
+    <input type="checkbox"> Pepperoni (Php 140.00)
+    <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+    <br>
+
+    <input type="checkbox"> Vegetable (Php 130.00)
+    <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+    <br><br>
+
+    Credit Card Number:
+    <input type="text" name="cc"><br><br>
+
+    PIN:
+    <input type="password" name="pin"><br><br>
+
+    Additional Note:<br>
+    <textarea rows="5" cols="40"></textarea>
+    <br><br>
+
+    <input type="submit" value="Submit Order">
+
+</form>
+
+</body>
+</html>
