@@ -1,0 +1,46 @@
+*
+{
+    margin :0px;
+    padding:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#parent1{
+    height: 700px;
+    width: 700px;
+    border: 1px solid #000;
+    display: flex;
+}
+.pichild{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    background-color: blue;
+
+    color: blue;
+
+    font-size: larger;
+
+    display: inline-block;
+}
+
+.p1child
+{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    background-color: blue;
+
+    color: white;
+
+    font-size: larger;
+}
