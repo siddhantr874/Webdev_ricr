@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navratri 2026 - Celebrate Maa Durga</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌺 Navratri 2026</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#garba">Garba</a></li>
+                <li><a href="#wishes">Wishes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>शुभ नवरात्रि 2026</h1>
+            <p>9 Days of Devotion, Dance & Divine Energy</p>
+            <div class="countdown">
+                <div class="day"><span id="days">9</span>Days</div>
+                <div class="day"><span id="hours">0</span>Hrs</div>
+                <div class="day"><span id="minutes">0</span>Mins</div>
+                <div class="day"><span id="seconds">0</span>Secs</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Navratri</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Navratri is a nine-night festival dedicated to Goddess Durga. Celebrate the victory of good over evil with devotion, fasting, garba dances, and vibrant colors.</p>
+                    <div class="navratri-days">
+                        <h3>9 Divine Days</h3>
+                        <div class="days-list">
+                            <div>Day 1: Shailputri</div>
+                            <div>Day 2: Brahmacharini</div>
+                            <div>Day 3: Chandraghanta</div>
+                            <div>Day 4: Kushmanda</div>
+                            <div>Day 5: Skandamata</div>
+                            <div>Day 6: Katyayani</div>
+                            <div>Day 7: Kalaratri</div>
+                            <div>Day 8: Mahagauri</div>
+                            <div>Day 9: Siddhidatri</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="durga-maa.jpg" alt="Maa Durga">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="garba" class="garba">
+        <div class="container">
+            <h2>Garba Nights</h2>
+            <p>Join the rhythmic dance celebrating life and devotion</p>
+            <div class="garba-grid">
+                <div class="garba-card">
+                    <div class="garba-icon">💃</div>
+                    <h3>Traditional Garba</h3>
+                    <p>Circle dance with dandiya sticks in colorful attire</p>
+                </div>
+                <div class="garba-card">
+                    <div class="garba-icon">🎶</div>
+                    <h3>Live Music</h3>
+                    <p>Folk songs and modern beats for all ages</p>
+                </div>
+                <div class="garba-card">
+                    <div class="garba-icon">🌙</div>
+                    <h3>Night Celebrations</h3>
+                    <p>Every evening from sunset till midnight</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wishes" class="wishes">
+        <div class="container">
+            <h2>Navratri Wishes</h2>
+            <div class="wishes-grid">
+                <div class="wish-card">
+                    <p>"May Maa Durga bless you with strength, prosperity & happiness this Navratri!"</p>
+                </div>
+                <div class="wish-card">
+                    <p>"9 days of fasting, 9 nights of dancing, 9 colors of joy! Happy Navratri!"</p>
+                </div>
+                <div class="wish-card">
+                    <p>"Jai Mata Di! Let this Navratri bring divine energy to your life."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>🌺 Shubh Navratri 2026 | Jai Mata Di 🌺<br>
+        Designed for Bhopal Celebrations</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Countdown timer
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const navratriStart = new Date('2026-10-01').getTime();
+            const distance = navratriStart - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+        }
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>

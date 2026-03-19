@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #d4a017;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d4a017;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff6b6b, #feca57, #ff9ff3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    animation: sparkle 20s linear infinite;
+}
+
+@keyframes sparkle {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(100px, 100px); }
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.countdown {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.day {
+    background: rgba(255,255,255,0.2);
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    min-width: 120px;
+}
+
+.day span {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.about {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #d4a017;
+    margin-bottom: 4rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.navratri-days {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.navratri-days h3 {
+    color: #d4a017;
+    margin-bottom: 1rem;
+}
+
+.days-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.about-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.garba {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.garba h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.garba > p {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+}
+
+.garba-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.garba-card {
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s;
+}
+
+.garba-card:hover {
+    transform: translateY(-10px);
+}
+
+.garba-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.garba-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.wishes {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.wishes h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #d4a017;
+    margin-bottom: 4rem;
+}
+
+.wishes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.wish-card {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    padding: 2rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.5rem; }
+    .about-grid { grid-template-columns: 1fr; }
+    nav ul { gap: 1rem; }
+    .countdown { gap: 1rem; }
+    .day { min-width: 80px; padding: 1rem 0.5rem; }
+    .days-list { grid-template-columns: 1fr; }
+}
