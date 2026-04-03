@@ -1,0 +1,31 @@
+:root {
+  --primary-color: hsl(23, 87%, 3%);
+  --secondary-color: #000100;
+  --prime-bgc: #194edd;
+  --sec-bgc: hsl(0, 49%, 59%);
+
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+}
+
+* {
+  padding: 15px;
+
+  background-color: rgb(205, 237, 228);
+  margin: 29px;
+}
+
+p {
+  color: var(--primary-color);
+  font: var(--primary-font);
+  background-color: var(--sec-bgc);
+}
+
+h1 {
+  color: var(--primary-font);
+  background-color: var(--sec-bgc);
+}
+
+h2 {
+  color: var(--prime-bgc);
+}
