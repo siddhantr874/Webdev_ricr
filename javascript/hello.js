@@ -61,11 +61,28 @@
 //   ?console.log("login success")
 //   :console.log("login failed") //shortend method
 
-let data;
-let name = "siddhant";
+// let data;
+// let name = "siddhant";
 
-data = name || 'N/A'
+// data = name || 'N/A'
 
-console.log(data);
+// console.log(data);
 
-
+let choice=1
+switch (choice){
+  case 1:{
+    console.log("Tea")
+    break;
+  }
+  case 2:{
+    console.log("Coffee")
+    break;
+  }
+  case 1:{
+    console.log("lassi")
+    break;
+  }
+  default: {
+    console.log("Paani");
+  }
+}
