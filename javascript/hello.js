@@ -68,7 +68,7 @@
 
 // console.log(data);
 
-let choice=1
+let choice=3
 switch (choice){
   case 1:{
     console.log("Tea")
@@ -78,7 +78,7 @@ switch (choice){
     console.log("Coffee")
     break;
   }
-  case 1:{
+  case 3:{
     console.log("lassi")
     break;
   }
