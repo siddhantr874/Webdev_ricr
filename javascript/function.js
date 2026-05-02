@@ -18,8 +18,15 @@
 // let result = add(a,b);
 // console.log(result);
 
-let abc = function(){
-    console.log("hello world");
-};
+// let abc = function () {
+//     console.log("hello world");
+// };
 
-console.log(abc);
+// console.log(abc)
+
+// arrow function
+arrowfun();
+
+const addarrow = (a, b) => a + b;
+
+console.log(addarrow(20, 30));
