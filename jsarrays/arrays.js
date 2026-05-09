@@ -155,3 +155,8 @@ let ar2 = [1,2,3,9,8,7,6,5,4];
 console.log(ar2.filter((val) => val => 6)); // ek se jyada result toh filter
 console.log(ar2.find((val) => val => 6)); // ek result toh find
 console.log(ar2.slice(0,7))
+
+let c = 3.14;
+console.log(c.toFixed(5));
+
+let name = "siddhant rajput"
